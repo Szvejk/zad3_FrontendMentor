@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+$primary-color: hsl(225, 100%, 94%);
+$second-color: hsl(245, 56%, 63%);
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+
+.wrapper {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+	
+	.container {
+		background-color: $primary-color;
+		height: 80vh;
+		width: 50vh;
+        top: 50vh;
+        border-radius: 20px;
+        box-shadow:2px 2px 6px black
+    
+    } 
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin: 3vh;
+        font-size: 30px;
+    }
+    p {
+        text-align: center;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        color: rgb(88, 87, 87) ;
+    }
+.music {
+    height: 10vh;
+    width: 40vh;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3vh;
+    
+    .music-foto {
+        height:60px;
+        width: 60px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    h5 {
+        padding: 10px;
+        font-size: 15px;
+        display: flex;
+        align-items: flex-start;
+        
+    }
+}
+
+
+
+}
+ img {
+        width: 50vh;
+        height: 30vh;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+     }
+
