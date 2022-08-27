@@ -18,7 +18,7 @@ body {
           transform: translate(-50%, -50%);
 }
 .wrapper .container {
-  background-color: hsl(225deg, 100%, 94%);
+  background-color: white;
   height: 80vh;
   width: 50vh;
   top: 50vh;
@@ -45,7 +45,7 @@ body {
 .wrapper .music {
   height: 10vh;
   width: 40vh;
-  background-color: #fff;
+  background-color: hsl(225deg, 10%, 94%);
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,16 +58,10 @@ body {
           align-items: center;
   margin: auto;
   margin-top: 3vh;
-}
-.wrapper .music .music-foto {
-  height: 60px;
-  width: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .wrapper .music h5 {
   padding: 10px;
@@ -78,6 +72,55 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.wrapper .music .change {
+  position: absolute;
+  right: 30px;
+  text-decoration: underline;
+  color: rgb(8, 8, 145);
+  font-weight: bold;
+}
+.wrapper .music-foto {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 8vh;
+}
+.wrapper .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vh;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 90px;
+}
+.wrapper button {
+  width: 360px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(123, 124, 124);
+  border-color: transparent;
+  background-color: #fff;
+}
+.wrapper .button-payment {
+  background-color: hsl(223deg, 88%, 30%);
+  color: #fff;
+  -webkit-box-shadow: 0 3px 10px black;
+          box-shadow: 0 3px 10px black;
 }
 
 img {
