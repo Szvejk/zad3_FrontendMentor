@@ -54,13 +54,13 @@ body {
 			display: flex;
 			align-items: flex-start;
 		}
-        .change {
-            position: absolute;
-            right: 30px;
-            text-decoration: underline;
-            color: rgb(8, 8, 145) ;
-            font-weight: bold;
-        }
+		.change {
+			position: absolute;
+			right: 30px;
+			text-decoration: underline;
+			color: rgb(8, 8, 145);
+			font-weight: bold;
+		}
 	}
 	.music-foto {
 		height: 60px;
@@ -87,7 +87,7 @@ body {
 		font-size: 16px;
 		color: rgb(123, 124, 124);
 		border-color: transparent;
-        background-color: #fff;
+		background-color: #fff;
 	}
 	.button-payment {
 		background-color: hsl(223, 88%, 30%);
@@ -100,4 +100,25 @@ img {
 	height: 30vh;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+	
+
+	button {
+		width: 50px;
+		height: 40px;
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 500px) {
+
+	button {
+		width: 40px;
+		height: 30px;
+		// background-color: green; 
+		// czemu tego nie dziedziczy
+		font-size: 8px;
+		color: aqua;
+	}
 }
