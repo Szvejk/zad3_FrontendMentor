@@ -11,42 +11,6 @@ body {
 }
 
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.wrapper .container {
-  background-color: white;
-  height: 80vh;
-  width: 50vh;
-  top: 50vh;
-  border-radius: 20px;
-  -webkit-box-shadow: 2px 2px 6px black;
-          box-shadow: 2px 2px 6px black;
-}
-.wrapper h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 3vh;
-  font-size: 30px;
-}
-.wrapper p {
-  text-align: center;
-  margin-left: 5vh;
-  margin-right: 5vh;
-  color: rgb(88, 87, 87);
-}
-.wrapper .music {
-  height: 10vh;
-  width: 40vh;
-  background-color: hsl(225deg, 10%, 94%);
-  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,12 +20,48 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  margin-top: 3vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper .container {
+  background-color: white;
+  min-height: 80vh;
+  width: 450px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 6px black;
+          box-shadow: 2px 2px 6px black;
+}
+.wrapper h2 {
+  text-align: center;
+  margin: 3vh;
+  font-size: 30px;
+}
+.wrapper p {
+  text-align: center;
+  color: rgb(88, 87, 87);
+}
+.wrapper .music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .music .gray-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: hsl(225deg, 10%, 94%);
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 300px;
+  padding: 10px;
 }
 .wrapper .music h5 {
   padding: 10px;
@@ -74,8 +74,6 @@ body {
           align-items: flex-start;
 }
 .wrapper .music .change {
-  position: absolute;
-  right: 30px;
   text-decoration: underline;
   color: rgb(8, 8, 145);
   font-weight: bold;
@@ -83,8 +81,6 @@ body {
 .wrapper .music-foto {
   height: 60px;
   width: 60px;
-  position: absolute;
-  left: 8vh;
 }
 .wrapper .buttons {
   display: -webkit-box;
@@ -101,9 +97,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 50vh;
-  height: 10vh;
-  margin: 0 auto;
-  padding: 90px;
+  padding: 30px;
 }
 .wrapper button {
   width: 360px;
@@ -124,21 +118,21 @@ body {
 }
 
 img {
-  width: 50vh;
+  max-width: 100%;
   height: 30vh;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 @media screen and (max-width: 1440px) {
-  button {
-    width: 50px;
+  .wrapper button {
+    width: 250px;
     height: 40px;
     font-size: 8px;
   }
 }
 @media screen and (max-width: 500px) {
-  button {
+  .wrapper button {
     width: 40px;
     height: 30px;
     font-size: 8px;
